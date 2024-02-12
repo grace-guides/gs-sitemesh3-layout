@@ -1,7 +1,6 @@
 buildscript {
     repositories {
         mavenCentral()
-        maven { url "https://repo.grails.org/grails/core" }
         maven { url "https://repo.gradle.org/gradle/libs-releases" }
         maven { url "https://plugins.gradle.org/m2/" }
     }
@@ -12,8 +11,8 @@ buildscript {
     }
 }
 
-version "0.1"
-group "grace.guides"
+version projectVersion
+group "org.graceframework.guides"
 
 apply plugin:"eclipse"
 apply plugin:"idea"
@@ -25,7 +24,9 @@ apply plugin:"org.graceframework.asset-pipeline"
 
 repositories {
     mavenCentral()
-    maven { url "https://repo.grails.org/grails/core" }
+    if (projectVersion.endsWith('-SNAPSHOT')) {
+        maven { url "https://s01.oss.sonatype.org/content/repositories/snapshots/" }
+    }
 }
 
 configurations {
