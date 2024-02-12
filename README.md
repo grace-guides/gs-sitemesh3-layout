@@ -6,7 +6,7 @@ Grails use [SiteMesh 2.4.2](https://github.com/sitemesh/sitemesh2) as a decorato
 
 This guide walks you through the process of creating a "Hello World" site, and integrate SiteMesh 3.1.0 with your Grace app.
 
-### Create a Grace app
+### Creating a new app
 
 ```bash
 grace create-app grace.guides.gs-sitemesh3-layout
@@ -255,6 +255,18 @@ sitemesh:
 > SiteMesh 3 has been completely rebuilt from the ground up. It's more efficient, easier to use and extensible. While the code is new, it still holds the same values of SiteMesh 2, namely simplicity, robustness and performance.
 
 If you'd like to learn more about SiteMesh 3, check it out [here](https://github.com/sitemesh/sitemesh3/tree/master?tab=readme-ov-file#sitemesh-3-overview).
+
+## Known issues!!!
+
+When package the app through `./gradlew assemble -Dgrails.env=dev`,
+
+Running it in the `build/libs`, the console will report an error `Error 404 processing decorator '/layouts/sitemesh.gsp'`.
+
+```bash
+$ ./gradlew assemble -Dgrails.env=dev
+$ cd build/libs
+$ java -jar gs-sitemesh3-layout-0.0.1-SNAPSHOT.war
+```
 
 ## Links
 
