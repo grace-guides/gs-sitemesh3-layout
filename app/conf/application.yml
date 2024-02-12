@@ -141,3 +141,16 @@ environments:
                 testOnReturn: false
                 jdbcInterceptors: ConnectionState
                 defaultTransactionIsolation: 2 # TRANSACTION_READ_COMMITTED
+---
+sitemesh:
+  decorator:
+    prefix: /layouts/
+    metaTag: decorator
+    exclusions: /assets/*
+    mappings:
+      - path: /demo/
+        decorator: sitemesh.gsp
+      - path: /demo/index
+        decorator: sitemesh.gsp
+      - path: /*.html
+        decorator: decorator.html
