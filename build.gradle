@@ -11,6 +11,8 @@ buildscript {
     }
 }
 
+ext['sitemeshVersion'] = '3.1.0'
+
 version projectVersion
 group "org.graceframework.guides"
 
@@ -46,6 +48,7 @@ dependencies {
     implementation "org.graceframework:grace-core"
     implementation "org.springframework.boot:spring-boot-starter-actuator"
     implementation "org.springframework.boot:spring-boot-starter-tomcat"
+    implementation "org.sitemesh:spring-boot-starter-sitemesh:$sitemeshVersion"
     implementation "org.graceframework:grace-boot"
     implementation "org.graceframework:grace-logging"
     implementation "org.graceframework:grace-plugin-controllers"
