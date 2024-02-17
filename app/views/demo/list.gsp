@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Demo List</title>
-    <meta name="decorator" content="sitemesh.gsp, default.gsp"/>
+    <meta name="decorator" content="sitemesh, default"/>
 </head>
 <body>
 
