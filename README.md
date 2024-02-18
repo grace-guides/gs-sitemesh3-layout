@@ -250,23 +250,21 @@ sitemesh:
 ./gradlew bootRun
 ```
 
-### Why use SiteMesh 3?
-
-> SiteMesh 3 has been completely rebuilt from the ground up. It's more efficient, easier to use and extensible. While the code is new, it still holds the same values of SiteMesh 2, namely simplicity, robustness and performance.
-
-If you'd like to learn more about SiteMesh 3, check it out [here](https://github.com/sitemesh/sitemesh3/tree/master?tab=readme-ov-file#sitemesh-3-overview).
-
-## Known issues!!!
-
-When package the app through `./gradlew assemble -Dgrails.env=dev`,
-
-Running it in the `build/libs`, the console will report an error `Error 404 processing decorator '/layouts/sitemesh.gsp'`.
+Also you can run in the production,
 
 ```bash
 $ ./gradlew assemble -Dgrails.env=dev
 $ cd build/libs
 $ java -jar gs-sitemesh3-layout-0.0.1-SNAPSHOT.war
 ```
+
+## Why use SiteMesh 3?
+
+> SiteMesh 3 has been completely rebuilt from the ground up. It's more efficient, easier to use and extensible. While the code is new, it still holds the same values of SiteMesh 2, namely simplicity, robustness and performance.
+
+If you'd like to learn more about SiteMesh 3, check it out [here](https://github.com/sitemesh/sitemesh3/tree/master?tab=readme-ov-file#sitemesh-3-overview).
+
+Grace plans to release in [2022.6.x](https://github.com/graceframework/grace-framework/wiki/Roadmap#20226x) with full support for SiteMesh 3, providing the same functionality as SiteMesh 2.
 
 ## Links
 
