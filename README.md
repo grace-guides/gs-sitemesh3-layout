@@ -237,9 +237,9 @@ sitemesh:
     exclusions: /assets/*
     mappings:
       - path: /demo/
-        decorator: sitemesh.gsp
+        decorator: sitemesh
       - path: /demo/index
-        decorator: sitemesh.gsp
+        decorator: sitemesh
       - path: /*.html
         decorator: decorator.html
 ```
